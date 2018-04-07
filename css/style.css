@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+  width: 1350px;
+  height: 1200px;
+  padding: 5px 10px;
+  margin: 10px;
+
+}
+body {
+  background-color: white;
+  text-align: center;
+  font-family: Times;
+  border: 5px solid LightCoral;
+}
+h1 {
+color: LightCoral;
+font-family: Georgia, Arial Black;
+margin-top: 50px;
+}
+h2{
+color: LightCoral;
+margin-bottom: 50px;
+}
+p {
+  text-align: center;
+  margin: 30px;
+}
+ul {
+   list-style-position: inside;
+}
+.highlight {
+  background-color: LightCoral;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.navigation-bar li {
+  list-style: none;
+  display:inline
+}
+.navigation-bar a {
+  color: black;
+}
+
+.navigation-bar a:hover {
+  color: LightCoral;
+}
