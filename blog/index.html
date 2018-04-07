@@ -7,14 +7,26 @@
   <title>Shannon Hartin | Blog</title>
 </head>
 <body>
+  <div>
   <style>
+
+  html {
+    box-sizing: border-box;
+    width: 1350px;
+    height: 1200px;
+    padding: 5px 10px;
+    margin: 10px;
+
+  }
   body {
     background-color: white;
     text-align: center;
     font-family: Times;
+    border: 1px solid LightCoral;
   }
   h1 {
   color: LightCoral;
+  font-family: Georgia, Arial Black;
   }
   h2{
   color: LightCoral;
@@ -28,9 +40,13 @@
   .highlight {
     background-color: LightCoral;
   }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 </style>
 <!--This is the navigation bar-->
-<div id="navigation bar" class="selection">
+<div id="blog-navigation bar" class="navigation bar.container">
   <ul>
     <li><a href="./index.html">Home</a></li>
     <li><a href="./projects/index.html">Projects</a></li>
@@ -38,22 +54,23 @@
   </ul>
 </div>
 <!--This is the header-->
-  <div id="greeting" class="section">
+  <div id="blog-header" class="header.container">
   <h1>Code Like A Mother</h1>
   <h2>A blog for moms who code!</h2>
 </div>
   <img src="CLAM.png" alt="Code Like A Mother" width = "300">
   <!--This is the content-->
-  <div id="content area" class="content">
+  <div id="blog-content area" class="content.container">
   <p> For the past 4 months, I have been learning to code! As a mom of a toddler, it has been tricky to fit in time to learn, <strong>BUT</strong> it has been manageable.<span class="highlight"> Follow along on my journey</span> as I share my tips on how I fit in coding as a mom, tips on learning to code, and free resources to help you code too!</p>
 </div>
 <br>
 <!--This is the footer-->
-<div id="footer area" class="footer">
+<div id="blog-footer area" class="footer.container">
 <footer>
   <p>Posted by: Shannon Hartin</p>
   <p>Contact Information: <a href="emailexample@example.com">someone@example.com</a></p>
   <small>&copy; Copyright 2018</small>
 </footer>
+</div>
 </body>
 </html>
