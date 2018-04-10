@@ -7,19 +7,23 @@ html {
 
 }
 body {
-  background-color: white;
+  background-color: #f2f2f2;
   text-align: center;
-  font-family: Times;
+  font-family: Georgia, Arial Black;
   border: 5px solid LightCoral;
 }
 h1 {
 color: LightCoral;
-font-family: Georgia, Arial Black;
-margin-top: 50px;
+font-family: Georgia, Arial black;
+margin:0;
+padding-bottom: 0;
+padding-top: 30px;
 }
 h2{
 color: LightCoral;
-margin-bottom: 50px;
+margin:0;
+padding-top:0;
+padding-bottom:25px;
 }
 p {
   text-align: center;
@@ -27,6 +31,9 @@ p {
 }
 ul {
    list-style-position: inside;
+}
+.autobiography {
+  border: 1px, solid, #f2f2f2;
 }
 .highlight {
   background-color: LightCoral;
@@ -42,7 +49,6 @@ ul {
 .navigation-bar a {
   color: black;
 }
-
 .navigation-bar a:hover {
   color: LightCoral;
 }
