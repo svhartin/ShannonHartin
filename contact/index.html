@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link type="text/css" rel="stylesheet" href="../css/style.css"/>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Shannon Hartin | Contact</title>
-</head>
-<body>
-  <div class="container">
-  <!--This is the navigation bar- Home, Projects, Blog -->
-  <div id="blog-navigation bar" class="navigation-bar">
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../projects/index.html">Projects</a></li>
-    <li><a href="../blog/index.html">Blog</a></li>
-    <li><a href="../media/index.html">Media</a></li>
-  </ul>
-</div>
-<!--This is the content-->
-<!--
-  The action attribute defines where on the server the form data should be sent
-  The method attribute specifies the HTTP method (GET or POST)
--->
-
-<form action="https://formspree.io/svharin@gmail.com" method="POST">
-<div id="contact-form-responses" class="form-responses">
-  <input type="text" name="firstname" placeholder="First Name" size="25" autofocus>
-  <br></br>
-  <input type="text" name="lastname" placeholder="Last Name" size="25" required>
-  <br></br>
-  <input type="email" name="userEmail" placeholder="your.email@example.com" size="40" required>
-  <br></br>
-  <textarea name="user_message" rows="8" cols="40" placeholder="Write your message here."></textarea>
-  <br></br>
-  <input type="submit">
-</form>
-</div>
-<!--This is the footer-->
-<div id="blog-footer area" class="footer">
-<footer>
-  <p>Posted by: Shannon Hartin</p>
-  <p>Contact Information: <a href="emailexample@example.com">someone@example.com</a></p>
-  <small>&copy; Copyright 2018</small>
-</footer>
-</div>
-</body>
+   <head>
+      <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Shannon Hartin | Contact</title>
+   </head>
+   <body>
+      <div class="container">
+         <!--This is the navigation bar- Home, Projects, Blog -->
+         <div id="blog-navigation bar" class="navigation-bar">
+            <ul>
+               <li><a href="../index.html">Home</a></li>
+               <li>
+                  <a href="../projects/index.html">Projects</a>
+                  <ul class="dropdown">
+                     <li><a href="#">First Project</a></li>
+                     <li><a href="#">Second Project</a></li>
+                     <li><a href="#">Third Project</a></li>
+                  </ul>
+               </li>
+               <li><a href="../blog/index.html">Blog</a></li>
+               <li><a href="../media/index.html">Media</a></li>
+            </ul>
+         </div>
+         <!--This is the content-->
+         <!--
+            The action attribute defines where on the server the form data should be sent
+            The method attribute specifies the HTTP method (GET or POST)
+            -->
+         <form action="https://formspree.io/svharin@gmail.com" method="POST">
+            <div id="contact-form-responses" class="form-responses">
+               <input type="text" name="firstname" placeholder="First Name" size="25" autofocus>
+               <br/><br/>
+               <input type="text" name="lastname" placeholder="Last Name" size="25" required>
+               <br/><br/>
+               <input type="email" name="userEmail" placeholder="your.email@example.com" size="40" required>
+               <br/><br/>
+               <textarea name="user_message" rows="8" cols="40" placeholder="Write your message here."></textarea>
+               <br/><br/>
+               <input type="submit">
+            </div>
+         </form>
+         <!--This is the footer-->
+         <div id="blog-footer area" class="footer">
+            <footer>
+               <p>Posted by: Shannon Hartin</p>
+               <p>Contact Information: <a href="emailexample@example.com">someone@example.com</a></p>
+               <small>&copy; Copyright 2018</small>
+            </footer>
+         </div>
+      </div>
+   </body>
 </html>
