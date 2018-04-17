@@ -1,16 +1,24 @@
 html {
   box-sizing: border-box;
-  width: 1350px;
+  /*width: 1350px;
   height: 1200px;
   padding: 5px 10px;
-  margin: 10px;
-
+  margin: 10px;*/
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
+
 body {
-  background-color: #f2f2f2;
+  background-color: white;
   text-align: center;
   font-family: Georgia, Arial Black;
-  border: 5px solid LightCoral;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  /* border: 5px solid LightCoral; */
 }
 h1 {
 color: LightCoral;
@@ -19,36 +27,156 @@ margin:0;
 padding-bottom: 0;
 padding-top: 30px;
 }
-h2{
+h2 {
 color: LightCoral;
 margin:0;
 padding-top:0;
 padding-bottom:25px;
 }
+
 p {
   text-align: center;
   margin: 30px;
 }
+
 ul {
    list-style-position: inside;
 }
-.autobiography {
-  border: 1px, solid, #f2f2f2;
+.blog-header-wrap {
+  background-image: url("CLAM.png");
+  background-size: cover;
+  background-repeat:no-repeat;
 }
-.highlight {
-  background-color: LightCoral;
-}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
+
+input[type=text] {
+  position: relative;
+  top: 80%;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 5px 5px;
+  box-sizing: border-box;
+  border: 2px solid LightCoral;
+}
+
+input[type=email] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 5px 5px;
+  box-sizing: border-box;
+  border: 2px solid LightCoral;
+}
+
+textarea {
+  width: 50%;
+  padding: 50px 60px;
+  margin: 5px 5px;
+  box-sizing: border-box;
+  border: 2px solid LightCoral;
+}
+
+input[type=text]:focus {
+    background-color: #FFFAF0;
+}
+
+.button-about-me {
+  background-color: white;
+  border: 3px solid LightCoral;
+  padding: 0;
+  display: inline-block;
+}
+
+.button-about-me a {
+  color: LightCoral;
+  text-align: center;
+  font-size: 16px;
+}
+
+.button-about-me a:hover {
+  color: white;
+  background-color: LightCoral;
+}
+
+.featured-area-wrap {
+  background: url(../HartinFamily.jpg) no-repeat center fixed;
+  background-size: cover;
+  width:100%;
+  height:100%;
+}
+
+.featured-area-wrap h1, .featured-area-wrap h3 {
+  position: relative;
+  top: 70%;
+  color: white;
+  text-shadow: black;
+}
+.footer {
+  background: #F0F0F0
+  /* border-radius: 10px; */
+  border: 1px solid white;
+  /* height: auto;
+  width: 200px; */
+}
+.header {
+  margin-top: 1.3em;
+}
+.highlight {
+  background-color: LightCoral;
+}
+
+.home-page-graphics img {
+  background-repeat:no-repeat;
+
+}
+.navigation-bar {
+  position: fixed;
+  top:0;
+  left:0;
+  height: auto;
+  width: 100vw;
+  background-color: rgba(50, 50, 50, .5);
+  /* opacity: 0.5;
+  filter: alpha(opacity=50%); */
+}
 .navigation-bar li {
+  position: relative; /* required for absolute positioning */
   list-style: none;
-  display:inline
+  display: inline;
+  width: 200px;
 }
 .navigation-bar a {
-  color: black;
+  color: white;
+  border: 1px solid LightCoral;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .navigation-bar a:hover {
   color: LightCoral;
+  background-color: #F0FFFF;
+}
+.navigation-bar .dropdown {
+  position: absolute; /* tracks nearest relatively-positioned ancestor */
+  top: 1em; /* positions according to the ancestor */
+  right: 0;
+  display: none; /* this hides the dropdown menu by default */
+}
+.navigation-bar a:hover + .dropdown {
+  display: block; /* shows the any dropdown that is a direct sibling of a hovered anchor tag in the navigation bar */
+}
+.dropdown:hover {
+display: block;
+}
+.navigation-bar > ul.container {
+  /* these styles will extend the styles already contained in the .container class */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
