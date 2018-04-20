@@ -83,20 +83,34 @@ input[type=text]:focus {
     background-color: #FFFAF0;
 }
 
-.button-about-me {
+.blog-area-wrap {
+  background: url(../HartinFamily.JPG) no-repeat center fixed;
+  background-size: cover;
+  width:100%;
+  height:100%;
+}
+
+.blog-area-wrap h1 {
+  position: relative;
+  top: 70%;
+  color: white;
+  text-shadow: black;
+}
+
+.button-about-me, .button-blog-link {
   background-color: white;
   border: 3px solid LightCoral;
   padding: 0;
   display: inline-block;
 }
 
-.button-about-me a {
+.button-about-me a, .button-blog-link a {
   color: LightCoral;
   text-align: center;
   font-size: 16px;
 }
 
-.button-about-me a:hover {
+.button-about-me a:hover, .button-blog-link a:hover {
   color: white;
   background-color: LightCoral;
 }
@@ -130,8 +144,29 @@ input[type=text]:focus {
 
 .home-page-graphics img {
   background-repeat:no-repeat;
-
 }
+
+.media-area-wrap {
+  background: url(../HartinFamily.JPG) no-repeat center fixed;
+  background-size: cover;
+  width:100%;
+  height:100%;
+}
+
+.media-area-wrap h1 {
+  position: relative;
+  top: 70%;
+  color: white;
+  text-shadow: black;
+}
+
+.media-posts li {
+  position: relative; /* required for absolute positioning */
+  list-style: none;
+  display: inline;
+  width: 200px;
+}
+
 .navigation-bar {
   position: fixed;
   top:0;
@@ -179,4 +214,7 @@ display: block;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+}
+#greeter {
+  background-color: red;
 }
