@@ -20,18 +20,25 @@ body {
   width: 100%;
   /* border: 5px solid LightCoral; */
 }
+
 h1 {
-color: LightCoral;
+color: black;
 font-family: Georgia, Arial black;
 margin:0;
 padding-bottom: 0;
 padding-top: 30px;
 }
+
 h2 {
 color: LightCoral;
 margin:0;
 padding-top:0;
 padding-bottom:25px;
+}
+
+h3 {
+  color: black;
+  font-family: Georgia, Arial black;
 }
 
 p {
@@ -46,6 +53,11 @@ ul {
   background-image: url("CLAM.png");
   background-size: cover;
   background-repeat:no-repeat;
+}
+
+.contact-form {
+  color: black;
+  text-align: left;
 }
 
 .container {

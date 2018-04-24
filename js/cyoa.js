@@ -1,22 +1,41 @@
-var response = prompt("While going on a hike, you come across a split path. Will you go left or right?");
+// var response = prompt("While going on a hike, you come across a split path. Will you go left or right?");
+//
+// if(response === "left" || response === "Left"){
+//     response = prompt("I hope you like long walks.");
+// } else if (response === "right" || response === "Right") {
+//     response = prompt("You should take the scenic route and go left.");
+// } else {
+//     alert("Please make a choice.");
+// }
 
-if(response === "left" || response === "Left"){
-    response = prompt("I hope you like long walks.");
-} else if (response === "right" || response === "Right") {
-    response = prompt("You should take the scenic route and go left.");
-} else {
-    alert("Please make a choice.");
+
+function choicePrompt(promptMessage, choice1, choice2, reponse1, reponse2) {
+    var response = prompt(promptMessage).toLowerCase();
+    if(response === choice1) {
+      alert(reponse1);
+    } else if(response === choice2) {
+      alert(response2);
+    } else {
+      alert("Invalid input. Please make a choice.");
+      return false;
+    }
+    return true;
 }
 
-var response = prompt("You're walking along gazing at the scenery. Suddenly, you trip and fall down. Don't worry- your clumsy nature comes in handy this time...1) Look around the area, 2) Look for a band-aid.");
 
-if(response === "Look around the area" || response === "look around the area"){
-    response = prompt("Hmm...it looks like you found something.");
-} else if (response === "Look for a band-aid" || response === "look for a band-aid") {
-    response = prompt('Lame-o. Is your band-aid "Hello Kitty" brand too?');
-} else {
-    alert("Please make a choice.");
-}
+while(!choicePrompt(
+  "While going on a hike, you come across a split path. Will you go left or right?",
+  "left", "right",
+  "I hope you like long walks.", "You should take the scenic route and go left."
+)) {}
+
+
+while(!choicePrompt(
+  "You're walking along gazing at the scenery. Suddenly, you trip and fall down. Don't worry- your clumsy nature comes in handy this time...1) Look around the area, 2) Look for a band-aid.",
+  "look around the area", "Look for a band-aid",
+  "Hmm...it looks like you found something.", "Lame-o. Is your band-aid \"Hello Kitty\" brand too?"
+)) {}
+
 
 var response = prompt("While looking around the area, you find a box and open it. There's a button inside. 1)Press the button, 2)Dust off the button.");
 
