@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sandbox</title>
+</head>
+<body>
+  <h1>Welcome to the Sandbox!</h1>
+  <h2>Feel free to play around, build, and dig up some hidden treasures!</h2>
+  <div id="secret" style="display: none;">gold coin</div>
+<img id="sand" src="Sand.jpg" alt="Sandbox" width=400>
+  <h2>Hidden Treasures</h2>
+  <h4>Click around to discover them and add them to your list by changing "Item #1" and "Item #2"!</h4>
+  <div class= "hiddenlist">
+  <ul>
+    <li id="item-1">Item #1 </li>
+    <li id="item-2"> Item #2 </li>
+  </ul>
+
+  <h4> Once you have found the hidden treasures, feel free to play around!</h4>
+  <ol>
+  <li>Change the font of "Hidden Treasures".</li>
+  <li>Change the font color of the hidden treasures you found to match their description in real life.</li>
+  <li>Add a border! <b>Hint:</b> $(".holder").css("border", "2px solid black");</li>
+</div>
+<div id="secret-2" style="display: none;">rare gem</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/sandbox.js"></script>
+
+</body>
+</html>
