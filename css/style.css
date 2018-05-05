@@ -230,3 +230,7 @@ display: block;
 #greeter {
   background-color: red;
 }
+
+#first-answer {
+  display:none;
+}

@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="cyoa.css" />
   <title>Projects | Choose Your Own Adventure</title>
 </head>
+
 <body>
-  <h1>CYOA</h1>
+  <div class="introduction">
+    <h1>The Mystery Hike</h1>
+    <p>You're on a beautiful hike in the mountains.
+      <p>
+        <p>You're having a bit of trouble making it up the steep climb. You're fuel is running low. You decide to keep though since you only have a mile to the top.</p>
+        <!-- <img src="IMG_1257" alt="Hike" width="200"> -->
+  </div>
+  <div id="question1" class="question">
+    <p>
+      Horray! You make it to the top of the steep hill. You come across a split path. Will you go left or right?
+    </p>
+    <button class="choice1">Left</button>
+    <button class="choice2">Right</button>
+    <div class="first-answer">
+      <p>I hope you like long walks.</p>
+    </div>
+    <div class="second-answer">
+      <p>You should take the scenic route and go left.</p>
+    </div>
+  </div>
+  <div id="question2" class="question">
+    <p>
+      You're walking along gazing at the scenery. Suddenly, you trip and fall down. Don't worry- your clumsy nature comes in handy this time...
+    </p>
+    <button class="choice1">Look around the area</button>
+    <button class="choice2">Look for a band-aid</button>
+    <div class="first-answer">
+      <p>Hmm...it looks like you found something.</p>
+    </div>
+    <div class="second-answer">
+      <p>Lame-o. Is your band-aid "Hello Kitty" brand too?</p>
+    </div>
+  </div>
+  <div id="question3" class="question">
+    <p>
+      While looking around the area, you find a box and open it. There's a button inside.
+    </p>
+    <button class="choice1">press the button</button>
+    <button class="choice2">dust off the button</button>
+    <div class="first-answer">
+      <p>You are transported to another land.</p>
+    </div>
+    <div class="second-answer">
+      <p>You accidently press the button and you are transported to another land.</p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="../../js/cyoa.js"></script>
 </body>
+
 </html>
