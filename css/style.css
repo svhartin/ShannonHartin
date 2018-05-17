@@ -197,7 +197,9 @@ input[type=text]:focus {
 }
 .navigation-bar a {
   color: white;
-  border: 1px solid LightCoral;
+  font-weight: bold;
+  text-decoration: none;
+  /* border: 1px solid LightCoral; */
   padding-left: 5px;
   padding-right: 5px;
   margin-left: 10px;

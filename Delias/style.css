@@ -1,19 +1,35 @@
+/* * {
+  z-index: -1;
+} */
+
 html {
   height: 100%;
+  width: 100%
 }
 
 h1 {
-color: black;
-font-family: Georgia, Arial black;
+/* color: black; */
+font-family: 'Open Sans', sans-serif;
 margin:0;
 padding-bottom: 0;
 padding-top: 30px;
 }
 
+h4 {
+  font-family: 'Acme', sans-serif;
+  color: #f5853f;
+  font-size: 2em;
+}
+
+h6 {
+  font-size: 3em;
+  font-family: 'Acme', sans-serif;
+}
+
 body {
-  background-color: white;
+  /* background-color: white; */
   text-align: center;
-  font-family: Georgia, Arial Black;
+  font-family: 'Acme', sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -21,32 +37,61 @@ body {
 }
 ul {
    list-style-position: inside;
+   text-align: center;
+}
+
+label {
+  text-align: left;
 }
 
 .main-container {
-  background: url(deliasBanner.jpg) no-repeat center fixed;
-  background-size: contain;
+  background: url(Cactus.jpg) no-repeat center center fixed;
+  background-size: cover;
   width:100%;
   height:100%;
 }
 
+/* .main-container::after {
+     content: "";
+     display: block;
+     position: fixed;
+     padding: 100px 0;
+     width: 100%;
+     height: 25%;
+     top: 0;
+     left: 0;
+     background: rgba(0, 0, 0, 0.1);
+   } */
+
 .main-container h1 {
   position: relative;
-  top: 70%;
-  color: white;
-  text-shadow: black;
+  margin:auto;
+  top: 40%;
+  /* padding-left: 150px; */
+  text-align: center;
+  color: #7C3626;
+  /* text-shadow: black; */
+  font-family: 'Acme', sans-serif;
+  letter-spacing: 1px;
+  font-size: 6em;
+  /* text-decoration: underline; */
 }
 
 .navigation-bar {
   position: fixed;
   top:0;
   left:0;
-  height: auto;
+  height: 80px;
   width: 100vw;
-  background-color: rgba(50, 50, 50, .5);
+  /* background-color: rgba(50, 50, 50, .5); */
+  background-color: #7C3626;
+  opacity: 0.5;
+  filter: alpha(opacity=50%);
+  z-index: 10;
 }
 
 .navigation-bar ul {
+  margin-top: 15px;
   padding-left: 0;
 }
 
@@ -54,13 +99,155 @@ ul {
   position: relative; /* required for absolute positioning */
   list-style: none;
   display: inline;
-  width: 200px;
-  padding: 25px;
+  /* width: 200px; */
+  width: 100%;
+  height: 50%;
+  padding: 10px;
 }
 
+.navigation-bar a {
+  color: #F5853F;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  justify-content: center;
+  font-size: 1.5em;
+  /* text-decoration: underline; */
+}
+
+ #logo-bar {
+   position: relative;
+   height: 50px;
+   width:50px;
+   /* margin-bottom: 5px; */
+   background-color: white;
+   display: inline;
+ }
+
+ #logo-bar h2 {
+   font-family: 'Open Sans', sans-serif;
+   color: #F5853F;
+   /* border: 1px solid #F5853F; */
+   font-weight: bold;
+   text-align: center;
+   padding-top: 10px;
+   letter-spacing: 1px;
+ }
+
+ #aboutDelias {
+   height: 300px;
+   /* width: auto; */
+   width: 100%;
+   /* margin-top:10px; */
+   padding-top: 50px;
+   background-color: #C7D59f;
+   display: inline;
+ }
+
+ #aboutDelias h1 {
+   font-family: 'Acme';
+   color: #7C3626;
+   text-align: center;
+   /* padding-top: 10px; */
+ }
+
+ #aboutDelias p {
+   font-family: 'Acme';
+   color: black;
+   text-align: center;
+   /* padding-top: 10px; */
+ }
+
+ #aboutDelias li {
+   /* list-style: none; */
+   display: inline;
+   color: black;
+   text-align: center;
+ }
+
+ /* .button-readMore {
+   background-color: #F5853F;
+   border: 3px solid black;
+   padding: 0;
+   display: inline-block;
+   color: white;
+   padding: 1.5em;
+ }
+
+ .button-readMore a {
+   color: white;
+   /* background-color: white; }*/
+
+
+.menu {
+background-color: #F5853F;
+border-top: 5px solid white;
+border-bottom: 5px solid white;
+width:100%;
+}
+
+.menu h1 {
+  color:white;
+  font-family: 'Acme', sans-serif;
+  letter-spacing: 3px;
+  font-size: 4em;
+}
+
+.menu img {
+  /* max-width: 320px; */
+  width: 75%;
+  /* height: auto; */
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.testimonials {
+background-color: white;
+color:black;
+letter-spacing: 1px;
+border: 5px solid white;
+padding-top: 25px;
+padding-bottom: 25px;
+width: 100%;
+}
+
+.testimonials img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 40px;
+  padding-bottom: 20px;
+  background-position: no repeat center;
+}
+
+.testimonials h2, p {
+  color: #7C3626;
+  font-family: 'Acme', sans-serif;
+}
+
+.testimonials a {
+  color: #F5853F;
+  font-size: 1.5em;
+}
+
+
 .footer-container {
-  background: white;
-  /* border-radius: 10px; */
+  background: #7C3626;
+  border-radius: 10px;
   border: 1px solid white;
-  width:100%
+  max-width:1742px;
+  font-family:'Open sans', sans-serif;
+  color: black;
+  padding: 100px;
+  border-bottom: 30px solid rgba(72, 60,	70, .5);
+}
+
+.form-group {
+    background-color: #C7D59F;
+    padding: 50px;
+    font-family: 'Open Sans', sans-serif;
+    color: #7C3626;
+    width: 100%;
+  }
+.btn btn-success, .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #8064A2;
 }
