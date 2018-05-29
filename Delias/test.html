@@ -7,60 +7,91 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="lightbox.min.css">
   <link href="https://fonts.googleapis.com/css?family=Acme|Open+Sans" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="style.css" />
+  <link type="text/css" rel="stylesheet" href="test.css" />
   <title>Delia's Mexican Restaurant</title>
 </head>
 
 <body>
-  <div class="main-container">-
+  <div class="main-container">
     <h1>Delia's Mexican Restaurant</h1>
-  </div>-
+  </div>
   <div id="navigationBar" class="navigation-bar">
     <ul>
       <li><a href="#aboutDelias">About Us</a></li>
       <li><a href="#menu">Menu</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#locations">Locations</a></li>
-      <li><a href="#contact">Contact Us</a></li>
     </ul>
   </div>
   <div class="row">
     <div id="logo-bar" class="col-12">
-      <h2>Authentic Home Made Food</h2>
+      <h2>Authentic Homemade Food</h2>
     </div>
   </div>
   <div class="row">
     <div id="aboutDelias" class="col-12">
-      <h1>Learn More About Our Restaurant</h1><br/>
-      <p>Ten years ago, we began our journey along Hwy 27. Quickly, we became a favorite among the locals with our delicious authentic Mexican dishes. Delia's Mexican Restaurant has grown into three locations in surrounding areas of Chattanooga, TN.
-        <p>We stand out with our limitless chips & salsa and over 50 + authentic Mexican dishes to choose from.</p>
-        <br/>
-        <p><b>Visit Delia's Mexican Restaurant at our three family owned locations:</b></p>
-        <p>Soddy Daisy, TN | Dayton, TN | Athens, TN</p>
+      <h1>Learn More About Our Restaurant</h1><br>
+      <p>Ten years ago, we began our journey along Hwy 27 and named the restaurant after our mother "Delia."</p>
+      <p> Quickly, we became a favorite among the locals with our delicious authentic Mexican dishes.</p>
+      <p> Delia's Mexican Restaurant has grown into three locations in surrounding areas of Chattanooga, TN.</p>
+      <p>We stand out with our limitless chips & salsa and over 50 + authentic Mexican dishes to choose from.</p>
+      <br/>
+      <p><b>Visit Delia's Mexican Restaurant at our three family owned locations:</b></p>
+      <p>Soddy Daisy, TN | Dayton, TN | Athens, TN</p>
     </div>
   </div>
   <div class="row">
     <div class="col-12">
       <div id="menu" class="menu">
-        <h1>Click here to view the menu!</h1>
-        <a href="img1.jpg" data-lightbox="menu" data-title="Menu 1"><img src="img1.jpg"></a>
-        <a href="img2.jpg" data-lightbox="menu" data-title="Menu 2"><img src="img2.jpg"></a>
-        <a href="img3.jpg" data-lightbox="menu" data-title="Menu 3"><img src="img3.jpg"></a>
-        <a href="img4.jpg" data-lightbox="menu" data-title="Menu 4"><img src="img4.jpg"></a>
-
+        <h1>Menu</h1><br>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="img1.jpg" style="width:100%">
+            <div class="text">Menu: First Page</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="img2.jpg" style="width:100%">
+            <div class="text">Menu: Second Page</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="img3.jpg" style="width:100%">
+            <div class="text">Menu: Third Page</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="img4.jpg" style="width:100%">
+            <div class="text">Menu: Fourth Page</div>
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-12">
       <div id="testimonials" class="testimonials">
-        <img src="Testimonials.png" alt="Delia's Taco Platter">
+        <img src="tacoPlate.jpg" alt="Delia's Taco Platter">
+        <h1>Testimonials</h1>
         <p>"This is Soddy's hidden gem. They have some of the best tacos for the price. The staff are always so welcoming and friendly. We've eaten here several times and the food was always made to perfection." - Ayesha, Yelp</p>
         <p>"Fantastic, authentic Mexican food. You can really taste the freshness of the ingredients." - Danny, Zomato </p>
-        <p><strong>Read more on why our customers love us on <a href="https://www.zomato.com/dayton-tn/delias-taqueria-dayton/reviews">Zomato</a> and <a href="https://www.yelp.com/biz/delias-soddy-daisy">Yelp</a>! Leave us a review and let us know what you love
-          about us too!</strong></p>
+        <p>Read more on why our customers love us on <a href="https://www.zomato.com/dayton-tn/delias-taqueria-dayton/reviews">Zomato</a> and <a href="https://www.yelp.com/biz/delias-soddy-daisy">Yelp</a>! Leave us a review and let us know what you love
+          about us too!</p>
       </div>
     </div>
   </div>
@@ -104,15 +135,15 @@
   <div id="copyright" class="footer ">
     <footer>
       <p>Designed by
-        <a href="http://www.megan-bond.com">Megan Bond</a> &
-        <a href="http://shannonhartin.com">Shannon Hartin</a>
+        <a href="https://www.megan-bond.com">Megan Bond</a> &
+        <a href="https://www.shannonhartin.com">Shannon Hartin</a>
       </p>
       <p>
         <small>&copy; Copyright 2018</small>
       </p>
     </footer>
   </div>
-  <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript" src="test.js"></script>
 </body>
 
 </html>
